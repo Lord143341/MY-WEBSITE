@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Computer database</title>
+</head>
+<body>
+<h2>
+<h1 style="color:blue;">1)Write a SQL query to create a database named Employees.</h1><br>
+- CREATE DATABASE Employees;<br>
+
+
+<h1 style="color:blue;">2)Write a SQL query to create table name Manager with Manager_ID, Name, Address, Age, Salary.</h1><br> 
+
+<b><>-CREATE TABLE Manager (Manager_ID INT,Name VARCHAR (25),Address VARCHAR(25),Age varchar(25),Salary varchar(1000000));</b></><br>
+
+
+<h1 style="color:blue;">3)Write a SQL query to insert record Manager id, name, Address, Age, Salary.</h1><br>
+
+<b>-INSERT INTO Manager VALUES (101, 'Ram', 'Pokhara', 36, 50000);<br>
+ INSERT INTO Manager VALUES (102, 'Shyam', 'Kathmandu', 25, 25000);<br>
+ INSERT INTO Manager VALUES (103, 'Hari', 'Hetauda', 55, 60000);<br>
+ INSERT INTO Manager VALUES (104, 'Sita', 'Patan', 34, 40000);<br>
+ INSERT INTO Manager VALUES (105, 'Rita', 'Jhapa', 34, 32000);</b><br>
+
+<h1 style="color:blue;">4)Write a SQL query to display all records.</h1><br>
+
+<b>-SELECT * FROM Manager;</b><br>
+
+<h1 style="color:blue;">5)Write a SQL to display only third record.</h1><br>
+
+-SELECT * FROM `manager` WHERE manager_id=103;</b>
+<br>
+<h1 style="color:blue;">6)Write a SQL query to dsplay only second column name.</h1><br>
+
+<b>-select name from manager;</b><br>
+
+<h1 style="color:blue;">7)Write a SQL query to display shyam and kathmandu.</h1><br>
+
+<b>-SELECT * 
+FROM Manager
+where Name = 'Shyam' AND Address = 'Kathmandu';</b><br>
+
+<h1 style="color:blue;">8)Write a SQL query to delete fifth record.</h1><br>
+
+<b>-delete from manager where manager_id=105;</b><br>
+
+<h1 style="color:blue;">9)Write a SQL to add new column email.</h1><br>
+<b>-alter table manager add email varchar(25);</b><br>
+
+<h1 style="color:blue;">10)Write a SQL to remove column age.</h1><br>
+<b>-alter table manager drop column age;</b><br>
+
+<h1 style="color:blue;">11)Write a SQL to delete table.</h1><br>
+<b>-drop table manager;</b><br>
+
+<h1 style="color:blue;">12)write a SQL query to delete database.</h1><br>
+<b>-drop database employees;</b><br>
+</h2>
+                        
+</body>
+</html>
